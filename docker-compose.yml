@@ -1,0 +1,22 @@
+version: '3.8'
+
+services:
+  app:
+    build: .
+    ports:
+      - "7777:7777"
+    environment:
+      - DB_CONNECTION_SECRET=mongodb://mongo:27017/logparserdb
+    depends_on:
+      - mongo
+
+  mongo:
+    image: mongo:5.0
+    restart: always
+    ports:
+      - "27017:27017"
+    volumes:
+      - mongo_data:/data/db
+
+volumes:
+  mongo_data:

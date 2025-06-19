@@ -1,4 +1,4 @@
-# Log Parser & Exporter
+# Log Parser & Exporter ⚡
 
 A robust Node.js + Express + MongoDB application for parsing, storing, searching, and exporting log files. Features REST APIs for authentication and log management, real-time log updates via WebSocket, and interactive API documentation with Swagger.
 
@@ -67,7 +67,7 @@ cp .env.example .env
 **Example:**
 ```
 DB_CONNECTION_SECRET=mongodb://mongo:27017/logparserdb  # Use in Docker
-# DB_CONNECTION_SECRET=mongodb://localhost:27017/logparserdb  # Use if running locally without Docker
+DB_CONNECTION_SECRET=mongodb://localhost:27017/logparserdb  # Use if running locally without Docker
 
 JWT_SECRET=yourStrongSecret
 NODE_ENV=development
